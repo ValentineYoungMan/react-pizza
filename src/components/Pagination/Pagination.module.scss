@@ -1,0 +1,41 @@
+.root {
+  //   :global {
+  //     .previous {
+  //       background-color: red;
+  //     }
+  //   }
+  text-align: center;
+  li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    //padding: 10px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fe5f1e;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fe5f1e;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+  a {
+    display: inline-block;
+    color: #fe5f1e;
+    width: 100%;
+    text-align: center;
+  }
+  :global {
+    .selected {
+      background-color: #fe5f1e;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
